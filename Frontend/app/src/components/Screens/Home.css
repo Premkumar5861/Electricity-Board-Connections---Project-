@@ -1,0 +1,78 @@
+/* Table wrapper */
+.table-wrapper {
+  overflow-x: auto;
+  overflow-y: auto;
+  height: 500px;
+  border: 1px solid #dee2e6;
+}
+
+/* Compact rows */
+.table-wrapper table td,
+.table-wrapper table th {
+  padding: 6px 12px;
+  font-size: 13px;
+  white-space: nowrap;
+  line-height: 1.2;
+}
+
+/* Sticky header */
+.table-wrapper thead th {
+  top: 0;
+  z-index: 1;
+}
+
+/* Pagination */
+.paginator {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  padding: 0;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+/* ✅ Normal button — screenshot மாதிரி */
+.paginator .page-item .page-link {
+  background-color: transparent;
+  color: #212529;
+  border: none;
+  padding: 6px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.paginator .page-item .page-link:hover {
+  background-color: #f0f0f0;
+}
+
+/* ✅ Active page — black box white text */
+.paginator .page-item.activate .page-link {
+  background-color: #212529;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+/* ✅ Go to First / Go to Last — normal text style */
+.paginator .page-item:first-child .page-link,
+.paginator .page-item:last-child .page-link {
+  color: #212529;
+  background-color: transparent;
+  font-weight: 500;
+}
+
+/* Disabled */
+.paginator .page-item.disabled .page-link {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* Date picker */
+.date {
+  z-index: 9999 !important;
+}
